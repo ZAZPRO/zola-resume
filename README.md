@@ -1,7 +1,5 @@
 # Zola Resume
 
-[Chinese Version](README.CN.md)
-
 Redesigned form [hugo resume](https://github.com/eddiewebb/hugo-resume).
 
 ## Features
@@ -13,7 +11,7 @@ Redesigned form [hugo resume](https://github.com/eddiewebb/hugo-resume).
 ## Quick Start
 
 ```bash
-git clone git@github.com:alongwy/zola-resume.git
+git clone git@github.com:ZAZPRO/zola-resume.git
 cd zola-resume
 zola serve
 # open http://127.0.0.1:1111/
