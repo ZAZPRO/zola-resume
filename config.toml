@@ -1,31 +1,31 @@
-base_url = "https://resume.alongwy.top"
+base_url = "https://daniilmira.com"
 compile_sass = true
-title = "Feng"
-description = "A clean resume theme"
-generate_feed = true
-build_search_index = true
-taxonomies = [
-  { name = "tags", feed = true },
-]
+title = "Daniil Mira: Resume"
+description = "Resume"
+generate_feed = false
+build_search_index = false
+taxonomies = [{ name = "tags", feed = false }]
 
 [markdown]
 highlight_code = true
 highlight_theme = "OneHalfLight"
 
 [extra]
-first_name = "Feng"
-last_name = "Yunlong"
-address = "Harbin, China"
-email = "ylfeng@ir.hit.edu.cn"
+first_name = "Daniil"
+last_name = "Mira"
+address = "Rheinberg, Germany"
+email = "contact@daniilmira.com"
+github = "https://github.com/ZAZPRO/"
+about_text = "Hi there 👋 I'm Daniil Mira. Embedded, Rust and OOP developer and a student in Hochschule Rhein-Waal."
 favicon = "/favicon.ico"
-avatar = "/media/avatar.png"
+avatar = "/media/avatar.jpg"
 
 katex = false
-show_about = true
+show_about = false
 show_skills = true
-show_projects = true
-show_opensource = true
-show_publications = true
+show_projects = false
+show_opensource = false
+show_publications = false
 show_experience = true
 show_education = true
-show_blog = true
+show_blog = false

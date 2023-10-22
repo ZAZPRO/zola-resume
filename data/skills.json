@@ -2,38 +2,67 @@
   {
     "grouping": "Languages, Operating Systems & Tools",
     "skills": [
-      "Cplusplus",
+      {
+        "name": "C",
+        "icon": "embeddedc"
+      },
       "Rust",
       "Java",
+      "Flutter",
+      {
+        "name": "C#",
+        "icon": "CSharp"
+      },
+      {
+        "name": "C++",
+        "icon": "cplusplus"
+      },
       "Python",
-      "git",
-      "linux",
-      "bash",
-      "javascript"
+      {
+        "name": "Nim",
+        "icon": "Numpy"
+      },
+      "Zig",
+      "Javascript",
+      "Git",
+      "Linux"
     ]
   },
   {
-    "grouping": "Platform Development & Administration",
+    "grouping": "Embedded Systems",
     "skills": [
-      "NGINX",
-      "MySQL",
       {
-        "name": "Slurm",
-        "icon": "bash"
+        "name": "ARM",
+        "icon": "aarch64"
+      },
+      {
+        "name": "AVR",
+        "icon": "arduino"
+      },
+      {
+        "name": "Zephyr",
+        "icon": "zend"
+      },
+      {
+        "name": "FreeRTOS",
+        "icon": "ssh"
+      },
+      {
+        "name": "STM32",
+        "icon": "labview"
+      },
+      {
+        "name": "Gecko",
+        "icon": "labview"
       }
     ]
   },
   {
     "grouping": "Data Management",
     "skills": [
-      {
-        "name": "MySQL/MariaDB",
-        "icon": "MySQL"
-      },
-      {
-        "name": "Sqlite",
-        "icon": "bash"
-      }
+      "PostgreSQL",
+      "MongoDB",
+      "Sqlite"
     ]
   },
   {
@@ -68,14 +97,13 @@
   {
     "grouping": "Containers & Cloud",
     "skills": [
+      "Docker",
+      "Podman",
+      "Ansible",
+      "NixOS",
       {
-        "name": "Docker",
-        "link": "https://docker.com"
-      },
-      {
-        "name": "Aliyun",
-        "link": "https://aliyun.com",
-        "icon": "bash"
+        "name": "Nomad",
+        "icon": "nextjs"
       }
     ]
   }

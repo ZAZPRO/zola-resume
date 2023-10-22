@@ -1,11 +1,23 @@
 {% macro display() %}
 {% set data = load_data(path="data/skills.json") %}
 <div class="is-flex is-flex-direction-column is-justify-content-center" style="height: 100%;">
-  <h2>skills</h2>
-  <div style="overflow: auto;">
+  <div class="introduction">
+    <div class="flex: 1;">
+      <h1>{{ config.extra.first_name }} <span class="text-primary">{{ config.extra.last_name }}</span></h1>
+      <h2 class="subtitle">
+        {{ config.extra.address ~ " · " }} <a href="mailto:{{ config.extra.email }}">{{ config.extra.email ~ " · "
+          }}</a>
+        <a href="{{ config.extra.github }}">Github</a>
+      </h2>
+    </div>
+  </div>
+
+  <h3 class="about_text">{{ config.extra.about_text }}</h3>
+
+  <div class="skills" style="overflow: auto;">
     {% for group in data %}
     <div style="padding-bottom: 1rem;">
-      <h3 style="color: #868e96;">{{ group.grouping }}</h3>
+      <h3>{{ group.grouping }}</h3>
       <div>
         {% for skill in group.skills %}
         {% if "name" in skill %}

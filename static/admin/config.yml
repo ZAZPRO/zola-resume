@@ -1,9 +1,9 @@
 backend:
   name: github
-  repo: alongwy/zola-resume
+  repo: ZAZPRO/zola-resume
   branch: main
   cms_label_prefix: netlify-cms/
-  site_domain: resume-alongwy.netlify.com
+  site_domain: daniilmira.com
 
 locale: "zh_Hans"
 media_folder: "static/media"

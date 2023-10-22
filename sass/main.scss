@@ -1,13 +1,16 @@
+@import 'nord.scss';
+
 html {
   padding: 0;
   margin: 0;
+  background-color: $nord1;
 }
 
 body {
   font-family: 'Open Sans', serif;
   padding: 0;
   margin: 0;
-  color: #868e96;
+  color: $nord5;
 }
 
 h1,
@@ -18,11 +21,12 @@ h5,
 h6 {
   font-family: 'Saira Extra Condensed', serif;
   font-weight: 700;
-  color: #343a40;
+  color: $nord8;
 }
 
 
-h1, h2{
+h1,
+h2 {
   text-transform: uppercase;
 }
 
@@ -35,34 +39,33 @@ h2 {
   font-size: 3.5rem;
 }
 
-.h3, h3 {
+.h3,
+h3 {
   font-size: calc(1.3rem + .6vw);
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: $nord0 !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: $nord9 !important;
 }
 
 a {
-  color: #BD5D38;
+  color: $nord7;
 }
 
-a:hover, a:focus, a:active {
-  color: #824027;
-}
-
-#content ul {
-  list-style: initial;
+a:hover,
+a:focus,
+a:active {
+  color: $nord6;
 }
 
 #content .subtitle {
-  font-size: 1.35rem; 
-  font-weight: 550; 
-  color: #868e96;
+  font-size: 1.35rem;
+  font-weight: 550;
+  color: $nord12;
 }
 
 #content {
@@ -80,9 +83,39 @@ a:hover, a:focus, a:active {
   height: 100vh;
 }
 
-.page{
-   height: 100vh; 
-   overflow: hidden;
+.page {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.introduction {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ececec;
+}
+
+.about_text {
+  color: $nord4;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  border-bottom: 1px solid #ececec;
+}
+
+.skills {
+  padding-top: 1rem;
+}
+
+.experience-content {
+  ul {
+    list-style: disc inside;
+  }
+
+  strong {
+    color: $nord7
+  }
+}
+
+.range-dates {
+  color: $nord13;
 }
 
 @media (min-width: 992px) {
@@ -92,7 +125,7 @@ a:hover, a:focus, a:active {
     margin: 0;
     outline: 0;
     border: 0;
-    border-color: #bd5d38;
+    border-color: $nord0;
     height: 100vh;
     width: 17rem;
     overflow: hidden;
@@ -100,36 +133,40 @@ a:hover, a:focus, a:active {
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: #bd5d38;
+    background-color: $nord0;
   }
+
   #content {
     margin-left: 17rem;
   }
+
   #avatar {
     text-align: center;
     max-width: 10rem;
     max-height: 10rem;
-    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+    // border: 0.5rem solid $nord10;
   }
+
   #menu {
     display: block;
     align-items: flex-start;
     margin-bottom: auto;
     flex-grow: 0
   }
-  
+
   .menu-list a {
-    color: rgba(255,255,255,.55);
+    color: $nord4;
     font-weight: bold;
-    padding: .5rem;
+    padding: 1rem;
   }
 
-  .menu-list a:hover, a:focus, a:active {
-    color: rgba(255,255,255,.75);
+  .menu-list a:hover,
+  a:focus,
+  a:active {
+    color: rgba(255, 255, 255, .75);
     font-weight: bold;
     border: 0;
     outline: none;
     background-color: transparent;
   }
 }
-

@@ -138,4 +138,5 @@ Almost All personal information outside the above details is captured by extra i
 ## Credits
 
 This project ports the Hugo Resume theme by Feng Yunlong to support zola.
+Link [zola-resume](https://github.com/AlongWY/zola-resume)
 

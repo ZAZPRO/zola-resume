@@ -16,14 +16,6 @@
           <div class="level-item">
             <h3 class="post-title"><a href="{{ page.permalink }}">{{ page.title }}</a></h3>
           </div>
-          {% if page.extra.bibtex %}
-          <div class="level-item">
-            <a role="button" data-target="copyTarget" aria-haspopup="true"
-              onclick="show_bib('{{ get_url(path=page.extra.bibtex)}}')">
-              <span class="tag is-warning">Bibtex</span>
-            </a>
-          </div>
-          {% endif %}
         </div>
         <div class="level-right">
           <div class="level-item">
@@ -35,7 +27,8 @@
         {% if page.description %}
         <div class="content" style="width: 100%;">
           {% if page.extra.image %}
-          <figure class="image is-128x128" style="float: {% if section.title == 'Publications' %}right{% else %}left{% endif %};">
+          <figure class="image is-128x128"
+            style="float: {% if section.title == 'Publications' %}right{% else %}left{% endif %};">
             {% if page.extra.image is starting_with("http") %}
             <img src="{{ page.extra.image }}">
             {% else %}
