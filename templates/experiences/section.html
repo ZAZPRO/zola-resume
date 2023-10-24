@@ -2,28 +2,26 @@
 {% set section = get_section(path=path) %}
 
 <div class="is-flex is-flex-direction-column" style="height: 100%;">
-    <div class="level-left">
-        <div class="level-item">
-            <h2>{{ section.title }}</h2>
-        </div>
+    <div class="level-item">
+        <h2>{{ section.title }}</h2>
     </div>
     <div style="overflow: auto;">
         {% for page in section.pages %}
-        <div class="mb-5">
+        <div class="mb-6">
             <nav class="level mb-0">
                 <div class="level-left">
                     <div class="level-item">
                         <h3>{{ page.extra.position }}</h3>
                     </div>
                 </div>
-                <div class="level-right is-hidden-touch">
+                <div class="level-right mt-0">
                     <div class="range-dates level-item">
                         {{ page.extra.range }}
                     </div>
                 </div>
             </nav>
+            <h2 class="subtitle">{{ page.title | markdown(inline=true) | safe }}</h2>
             <div class="is-flex is-flex-direction-column is-align-items-start">
-                <h2 class="subtitle">{{ page.title | markdown(inline=true) | safe }}</h2>
                 <div class="experience-content">
                     {{ page.content| markdown(inline=false) | safe }}
                 </div>
