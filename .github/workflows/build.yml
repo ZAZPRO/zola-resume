@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy the website
         run: >-
-          rsync --rsh 'ssh -p $DEPLOY_PORT' -avx --delete --exclude '.ssh' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./
+          rsync --rsh 'ssh -p ${DEPLOY_PORT}' -avx --delete --exclude '.ssh' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./
         env:
           DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
           DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
