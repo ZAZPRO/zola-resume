@@ -9,4 +9,5 @@ watch:
 	zola serve
 
 deploy:
+	just build
 	source .env && rsync --rsh=$RSYNC_RSH -avx --delete --exclude '.ssh' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./
