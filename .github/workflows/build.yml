@@ -1,7 +1,7 @@
 name: CI
 run-name: Zola blog deployment
 on:
-  tag:
+  push:
 
 jobs:
   build:
@@ -30,7 +30,7 @@ jobs:
 
       - name: Deploy the website
         run: >-
-          echo $RSYNC_RSH && rsync -e $RSYNC_RSH -avx --delete --exclude '.ssh' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./
+          rsync --rsh=$RSYNC_RSH -avx --delete --exclude '.ssh' public/ $DEPLOY_USERNAME@$DEPLOY_SERVER:./
         env:
           RSYNC_RSH: ssh -p ${{ secrets.DEPLOY_PORT }}
           DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
