@@ -52,7 +52,11 @@
         "icon": "labview"
       },
       {
-        "name": "Gecko",
+        "name": "Nordic Semiconductor",
+        "icon": "labview"
+      },
+      {
+        "name": "Silicon Labs",
         "icon": "labview"
       }
     ]
