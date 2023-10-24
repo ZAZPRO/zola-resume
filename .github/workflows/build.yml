@@ -23,8 +23,9 @@ jobs:
         run: zola build
 
       - name: Scan the host key
-        run: mkdir -p ~/.ssh/ && ssh-keyscan -H $DEPLOY_SERVER >> ~/.ssh/known_hosts
+        run: mkdir -p ~/.ssh/ && ssh-keyscan -p $DEPLOY_PORT -H $DEPLOY_SERVER >> ~/.ssh/known_hosts
         env:
+          DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
           DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
 
       - name: Deploy the website
