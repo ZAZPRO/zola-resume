@@ -24,6 +24,8 @@
         {% if "name" in skill %}
         {% if "icon" in skill %}
         <span class="icon"><i class="devicon-{{  skill.icon | lower }}-plain"></i></span>{{ skill.name }}
+        {% elif "icon_name" in skill %}
+        <span class="icon"><i class="devicon-{{  skill.icon_name | lower }}"></i></span>{{ skill.name }}
         {% else %}
         <span class="icon"><i class="devicon-{{  skill.name | lower }}-plain"></i></span>{{ skill.name }}
         {% endif %}

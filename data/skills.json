@@ -74,32 +74,15 @@
     ]
   },
   {
-    "grouping": "Architecture",
+    "grouping": "Machine Learning",
     "skills": [
       {
-        "name": "IP Networking",
-        "icon": "bash"
+        "name": "Tensorflow",
+        "icon_name": "tensorflow-original"
       },
-      {
-        "name": "DNS",
-        "icon": "bash"
-      },
-      {
-        "name": "Firewalls",
-        "icon": "bash"
-      },
-      {
-        "name": "Load Balancing",
-        "icon": "bash"
-      },
-      {
-        "name": "Microservices",
-        "icon": "bash"
-      },
-      {
-        "name": "RESTful APIs",
-        "icon": "bash"
-      }
+      "Pytorch",
+      "Numpy",
+      "Pandas"
     ]
   },
   {
@@ -112,6 +95,39 @@
       {
         "name": "Nomad",
         "icon": "nextjs"
+      }
+    ]
+  },
+  {
+    "grouping": "Architecture",
+    "skills": [
+      {
+        "name": "Computer Networks",
+        "icon_name": "networkx-original"
+      },
+      {
+        "name": "Messaging Queues",
+        "icon_name": "networkx-original"
+      },
+      {
+        "name": "DNS",
+        "icon_name": "networkx-original"
+      },
+      {
+        "name": "Firewalls",
+        "icon_name": "networkx-original"
+      },
+      {
+        "name": "Load Balancing",
+        "icon_name": "networkx-original"
+      },
+      {
+        "name": "Microservices",
+        "icon_name": "networkx-original"
+      },
+      {
+        "name": "RESTful APIs",
+        "icon_name": "networkx-original"
       }
     ]
   }
