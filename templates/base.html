@@ -1,5 +1,5 @@
 {% import 'macros/head.html' as macros_head -%}
-{% import 'macros/fullpage.html' as macros_fullpage -%}
+{% import 'macros/menu.html' as macros_menu -%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,14 +18,13 @@
 <body>
   <aside id="sidebar" class="menu is-hidden-touch">
     {{ macros_head::avatar() }}
-    {{ macros_fullpage::menu()}}
+    {{ macros_menu::menu()}}
   </aside>
   <div id="content">
     <!-- Content -->
     {% block content %}
     {% endblock content %}
   </div>
-  {{ macros_fullpage::fullpage() }}
 </body>
 
 </html>
