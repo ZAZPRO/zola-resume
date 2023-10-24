@@ -1,7 +1,7 @@
 name: CI
 run-name: Zola blog deployment
 on:
-  push:
+  tag:
 
 jobs:
   build:
