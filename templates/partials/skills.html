@@ -1,5 +1,6 @@
 {% macro display() %}
 {% set data = load_data(path="data/skills.json") %}
+{% set section = get_section(path="_index.md") %}
 <div class="is-flex is-flex-direction-column is-justify-content-center" style="height: 100%;">
   <div class="introduction">
     <div class="flex: 1;">
@@ -12,7 +13,7 @@
     </div>
   </div>
 
-  <h3 class="about_text">{{ config.extra.about_text }}</h3>
+  <h3 class="about_text has-text-centered">{{ section.content | markdown() | safe }}</h3>
 
   <div class="skills" style="overflow: auto;">
     {% for group in data %}

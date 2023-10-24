@@ -16,7 +16,6 @@ last_name = "Mira"
 address = "Rheinberg, Germany"
 email = "contact@daniilmira.com"
 github = "https://github.com/ZAZPRO/"
-about_text = "Hi there 👋 I'm Daniil Mira. Embedded, Rust and OOP developer and a student in Hochschule Rhein-Waal."
 favicon = "/favicon.ico"
 avatar = "/media/avatar.jpg"
 
