@@ -9,13 +9,13 @@
 <div id="fullpage">
 
   {% if config.extra.show_skills %}
-  <div class="section hero is-fullheight page" id="skills">
+  <div class="section hero is-fullheight page" id="skills" style="border-bottom: 1px solid #ececec;">
     {{ partial_skills::display() }}
   </div>
   {% endif %}
 
   {% if config.extra.show_experience %}
-  <div class="section hero is-fullheight page" id="experience">
+  <div class="section hero is-fullheight page" id="experience" style="border-bottom: 1px solid #ececec;">
     {{ partial_experiences::display(title="experience", path="experience/_index.md") }}
   </div>
   {% endif %}
