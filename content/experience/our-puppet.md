@@ -1,5 +1,5 @@
 +++
-title = "Our Puppet"
+title = "Our Puppet Project"
 date = 2023-06-22T15:20:48Z
 
 [extra]
